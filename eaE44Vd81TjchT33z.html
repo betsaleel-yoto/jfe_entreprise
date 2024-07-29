@@ -1,0 +1,379 @@
+<html><head><base href="https://autonomie-femmes.fr/contact">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactez-nous - EmpowerHer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+  :root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: #93c5fd;
+    --white: #ffffff;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+    color: var(--primary-blue);
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 20px 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--light-blue);
+  }
+
+  .hero {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-section {
+    padding: 100px 0;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .contact-form {
+    background-color: var(--light-blue);
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-blue);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .form-group textarea {
+    height: 150px;
+  }
+
+  .submit-btn {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: var(--secondary-blue);
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-item {
+    margin-bottom: 20px;
+  }
+
+  .contact-item h3 {
+    margin-bottom: 10px;
+  }
+
+  .contact-item p {
+    margin: 0;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    color: var(--primary-blue);
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: var(--secondary-blue);
+  }
+
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 50px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 200px;
+  }
+
+  .footer-section h3 {
+    margin-bottom: 20px;
+  }
+
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    color: var(--light-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: var(--white);
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">EmpowerHer</div>
+        <div class="nav-links">
+          <a href="https://autonomie-femmes.fr/">Accueil</a>
+          <a href="https://autonomie-femmes.fr/programmes">Programmes</a>
+          <a href="https://autonomie-femmes.fr/apropos">À propos</a>
+          <a href="https://autonomie-femmes.fr/contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Contactez-nous</h1>
+        <p>Nous sommes là pour répondre à vos questions et vous accompagner dans votre parcours</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Adresse</h3>
+              <p>123 Rue de l'Empowerment</p>
+              <p>75001 Paris, France</p>
+            </div>
+            <div class="contact-item">
+              <h3>Téléphone</h3>
+              <p>+33 1 23 45 67 89</p>
+            </div>
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p>contact@empowerher.fr</p>
+            </div>
+            <div class="contact-item">
+              <h3>Horaires</h3>
+              <p>Lundi - Vendredi: 9h00 - 18h00</p>
+              <p>Samedi: 10h00 - 14h00</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://facebook.com/empowerher" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/empowerher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/empowerher" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com/company/empowerher" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>À Propos</h3>
+          <p>EmpowerHer est dédié à l'autonomisation des femmes à travers des formations et du développement personnel.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Liens Rapides</h3>
+          <ul>
+            <li><a href="https://autonomie-femmes.fr/programmes">Nos Programmes</a></li>
+            <li><a href="https://autonomie-femmes.fr/blog">Blog</a></li>
+            <li><a href="https://autonomie-femmes.fr/evenements">Événements</a></li>
+            <li><a href="https://autonomie-femmes.fr/contact">Nous Contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Suivez-nous</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com/empowerher" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/empowerher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/empowerher" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/empowerher" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactForm = document.getElementById('contact-form');
+      
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Here you would typically send the form data to a server
+        // For this example, we'll just log it to the console
+        const formData = new FormData(contactForm);
+        console.log('Form submitted with the following data:');
+        for (let [key, value] of formData.entries()) {
+          console.log(`${key}: ${value}`);
+        }
+        
+        // Clear the form
+        contactForm.reset();
+        
+        // Show a success message (you might want to style this better in a real application)
+        alert('Merci pour votre message ! Nous vous contacterons bientôt.');
+      });
+
+      // Animation for form and contact info
+      const elements = document.querySelectorAll('.contact-form, .contact-info');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      elements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(50px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>

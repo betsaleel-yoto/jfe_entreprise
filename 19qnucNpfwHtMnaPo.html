@@ -1,0 +1,338 @@
+<html><head><base href="https://autonomie-femmes.fr/programmes">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Programmes - EmpowerHer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+  :root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: #93c5fd;
+    --white: #ffffff;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+    color: var(--primary-blue);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 20px 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--light-blue);
+  }
+
+  .hero {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .programs {
+    padding: 100px 0;
+  }
+
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .program-card {
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .program-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .program-image {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .program-content {
+    padding: 20px;
+  }
+
+  .program-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .program-description {
+    margin-bottom: 20px;
+  }
+
+  .program-cta {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .program-cta:hover {
+    background-color: var(--secondary-blue);
+  }
+
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 50px 0;
+    margin-top: 100px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 200px;
+  }
+
+  .footer-section h3 {
+    margin-bottom: 20px;
+  }
+
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    color: var(--light-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: var(--white);
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    color: var(--white);
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: var(--light-blue);
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .program-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">EmpowerHer</div>
+        <div class="nav-links">
+          <a href="https://autonomie-femmes.fr/">Accueil</a>
+          <a href="https://autonomie-femmes.fr/programmes">Programmes</a>
+          <a href="https://autonomie-femmes.fr/a-propos">À propos</a>
+          <a href="https://autonomie-femmes.fr/contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Nos Programmes</h1>
+        <p>Découvrez nos formations conçues pour vous autonomiser et révéler votre plein potentiel</p>
+      </div>
+    </section>
+
+    <section class="programs">
+      <div class="container">
+        <div class="program-grid">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="https://autonomie-femmes.fr/images/leadership-program.jpg" alt="Femmes en discussion lors d'un atelier de leadership" width="300" height="200">
+            </div>
+            <div class="program-content">
+              <h2 class="program-title">Leadership Féminin</h2>
+              <p class="program-description">Développez vos compétences en leadership et apprenez à diriger avec confiance et authenticité.</p>
+              <a href="https://autonomie-femmes.fr/programmes/leadership-feminin" class="program-cta">En savoir plus</a>
+            </div>
+          </div>
+          <div class="program-card">
+            <div class="program-image">
+              <img src="https://autonomie-femmes.fr/images/career-development.jpg" alt="Femme travaillant sur son plan de carrière" width="300" height="200">
+            </div>
+            <div class="program-content">
+              <h2 class="program-title">Développement de Carrière</h2>
+              <p class="program-description">Planifiez et accélérez votre progression professionnelle avec des stratégies éprouvées.</p>
+              <a href="https://autonomie-femmes.fr/programmes/developpement-carriere" class="program-cta">En savoir plus</a>
+            </div>
+          </div>
+          <div class="program-card">
+            <div class="program-image">
+              <img src="https://autonomie-femmes.fr/images/entrepreneurship.jpg" alt="Femme entrepreneur présentant son projet" width="300" height="200">
+            </div>
+            <div class="program-content">
+              <h2 class="program-title">Entrepreneuriat au Féminin</h2>
+              <p class="program-description">Lancez et développez votre entreprise avec confiance et les bons outils.</p>
+              <a href="https://autonomie-femmes.fr/programmes/entrepreneuriat-feminin" class="program-cta">En savoir plus</a>
+            </div>
+          </div>
+          <div class="program-card">
+            <div class="program-image">
+              <img src="https://autonomie-femmes.fr/images/work-life-balance.jpg" alt="Femme pratiquant la méditation pour l'équilibre vie-travail" width="300" height="200">
+            </div>
+            <div class="program-content">
+              <h2 class="program-title">Équilibre Vie Professionnelle et Personnelle</h2>
+              <p class="program-description">Apprenez à gérer votre temps et votre énergie pour une vie épanouie.</p>
+              <a href="https://autonomie-femmes.fr/programmes/equilibre-vie-pro-perso" class="program-cta">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>À Propos</h3>
+          <p>EmpowerHer est dédié à l'autonomisation des femmes à travers des formations et du développement personnel.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Liens Rapides</h3>
+          <ul>
+            <li><a href="https://autonomie-femmes.fr/programmes">Nos Programmes</a></li>
+            <li><a href="https://autonomie-femmes.fr/blog">Blog</a></li>
+            <li><a href="https://autonomie-femmes.fr/evenements">Événements</a></li>
+            <li><a href="https://autonomie-femmes.fr/contact">Nous Contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Suivez-nous</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com/empowerher" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/empowerher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/empowerher" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/empowerher" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const programCards = document.querySelectorAll('.program-card');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      programCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
+</body>
+</html>
