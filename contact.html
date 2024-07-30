@@ -310,7 +310,8 @@
         <div class="contact-grid">
           <div class="contact-form">
             <h2>Envoyez-nous un message</h2>
-            <form id="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/xkgwrobg"
+            method="POST">
               <div class="form-group">
                 <label for="name">Nom</label>
                 <input type="text" id="name" name="name" required>
@@ -399,23 +400,6 @@
     menuIcon.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
-      contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Here you would typically send the form data to a server
-        // For this example, we'll just log it to the console
-        const formData = new FormData(contactForm);
-        console.log('Form submitted with the following data:');
-        for (let [key, value] of formData.entries()) {
-          console.log(`${key}: ${value}`);
-        }
-        
-        // Clear the form
-        contactForm.reset();
-        
-        // Show a success message (you might want to style this better in a real application)
-        alert('Merci pour votre message ! Nous vous contacterons bientôt.');
-      });
 
       // Animation for form and contact info
       const elements = document.querySelectorAll('.contact-form, .contact-info');
