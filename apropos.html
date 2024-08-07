@@ -310,7 +310,10 @@
 
   .about-content p {
     margin-bottom: 10px;
-  }
+    word-wrap: break-word; /* Permet de couper les mots trop longs pour qu'ils reviennent à la ligne */
+    white-space: normal;   /* Assure que les espaces blancs sont traités normalement */
+    overflow-wrap: break-word; /* Alternative à word-wrap pour une meilleure compatibilité */
+}
   }
 </style>
 </head>
